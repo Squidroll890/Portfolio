@@ -1,0 +1,76 @@
+﻿@{
+    ViewBag.Title = "Contact";
+    Layout = "_Layout";
+}
+
+<div class="container my-5">
+    <div class="text-center mb-5">
+        <h2 class="fw-bold text-primary">Get in Touch</h2>
+        <p class="text-muted">Feel free to reach out through any of the platforms below.</p>
+    </div>
+
+    <div class="row justify-content-center align-items-stretch">
+        <!-- Contact Info -->
+        <div class="col-md-6 mb-4 d-flex">
+            <div class="card flex-fill h-100 shadow-sm border-0">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold text-secondary">Contact Details</h5>
+                    <ul class="list-unstyled mt-3 text-black">
+                        <li class="mb-2 ">
+                            <i class="bi bi-envelope-fill text-primary me-2"></i>
+                            <strong>Email:</strong> laymarcueva02@gmail.com
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-phone-fill text-primary me-2"></i>
+                            <strong>Phone:</strong> 0968-204-2546
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-geo-alt-fill text-primary me-2"></i>
+                            <strong>Location:</strong> Cebu City, Philippines
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Social Media -->
+        <div class="col-md-6 mb-4 d-flex">
+            <div class="card flex-fill h-100 shadow-sm border-0">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold text-secondary">Connect with Me</h5>
+                    <div class="d-flex gap-3 mt-3">
+                        <a href="https://www.facebook.com/squid.roll.10" class="btn btn-outline-custom" target="_blank">
+                            <i class="bi bi-facebook me-1"></i> Facebook
+                        </a>
+                        <a href="https://github.com/Squidroll890" class="btn btn-outline-custom" target="_blank">
+                            <i class="bi bi-github me-1"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<style>
+    strong, li {
+        color: black;
+    }
+
+    .btn-outline-custom {
+        color: #ffffff;
+        background-color: #4E71FF; /* Custom purple */
+        border: 2px solid #4E71FF;
+        transition: all 0.3s ease;
+    }
+
+        .btn-outline-custom:hover {
+            background-color: #5409DA;
+            border-color: #5409DA;
+            color: #fff;
+        }
+
+       
+</style>
+
