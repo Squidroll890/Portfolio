@@ -1,5 +1,119 @@
-﻿<h2>My Projects</h2>
-<ul>
-    <li><strong>Hotel Management System</strong> – Built with ASP.NET MVC and EF Core</li>
-    <li><strong>Inventory App</strong> – A basic CRUD app</li>
-</ul>
+﻿@* Projects.cshtml *@
+<section class="container py-5">
+    <h2 class="text-center text-primary fw-bold mb-5">My Projects</h2>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-4">
+
+        <!-- Hotel Management Simulator System -->
+        <div class="col">
+            <div class="card h-100 shadow-sm border-0">
+                <img src="~/img/projects/hotel.png" class="card-img-top project-img"
+                     alt="Hotel Management System"
+                     data-bs-toggle="modal" data-bs-target="#imagePreviewModal"
+                     onclick="showImage(this.src)">
+                <div class="card-body">
+                    <h5 class="card-title text-secondary fw-bold">Hotel Management Simulator System</h5>
+                    <p class="card-text">
+                        Capstone project built with <strong>ASP.NET MVC</strong> and <strong>Entity Framework Core</strong>. I was the <strong>Database Manager</strong> and <strong>Programmer</strong> responsible for designing the schema and implementing backend logic.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ACT Library Management System -->
+        <div class="col">
+            <div class="card h-100 shadow-sm border-0">
+                <img src="~/img/projects/library.png" class="card-img-top project-img"
+                     alt="Library Management System"
+                     data-bs-toggle="modal" data-bs-target="#imagePreviewModal"
+                     onclick="showImage(this.src)">
+                <div class="card-body">
+                    <h5 class="card-title text-secondary fw-bold">ACT Library Management System</h5>
+                    <p class="card-text">
+                        A complete system developed using <strong>ASP.NET MVC</strong> and <strong>SQL Server</strong>. I worked as a <strong>Fullstack Developer</strong>, handling both UI and server-side operations for managing books, users, and borrow/return tracking.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Student Uniform Inventory System -->
+        <div class="col">
+            <div class="card h-100 shadow-sm border-0">
+                <img src="~/img/projects/suis.png" class="card-img-top project-img"
+                     alt="Student Uniform Inventory System"
+                     data-bs-toggle="modal" data-bs-target="#imagePreviewModal"
+                     onclick="showImage(this.src)">
+                <div class="card-body">
+                    <h5 class="card-title text-secondary fw-bold">Student Uniform Inventory System</h5>
+                    <p class="card-text">
+                        Developed a system to track student uniforms using <strong>Windows Forms Application</strong> in C#.
+                        I was the <strong>Fullstack Developer</strong> responsible for both the frontend and backend.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- GeekTech Blog Site -->
+        <div class="col">
+            <div class="card h-100 shadow-sm border-0">
+                <img src="~/img/projects/geektech.png" class="card-img-top project-img"
+                     alt="GeekTech Blog Site"
+                     data-bs-toggle="modal" data-bs-target="#imagePreviewModal"
+                     onclick="showImage(this.src)">
+                <div class="card-body">
+                    <h5 class="card-title text-secondary fw-bold">GeekTech Blog Site</h5>
+                    <p class="card-text">
+                        Group project created as a blogging platform. Built with <strong>HTML</strong>, <strong>CSS</strong> and <strong>JavaScript</strong>. I served as a <strong>Web Developer</strong> in charge of frontend design and blog post integration.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Xamarin Map App -->
+        <div class="col">
+            <div class="card h-100 shadow-sm border-0">
+                <img src="~/img/projects/map.png" class="card-img-top project-img"
+                     alt="Xamarin Map App"
+                     data-bs-toggle="modal" data-bs-target="#imagePreviewModal"
+                     onclick="showImage(this.src)">
+                <div class="card-body">
+                    <h5 class="card-title text-secondary fw-bold">Mobile Map Application</h5>
+                    <p class="card-text">
+                        A mobile application developed using <strong>Xamarin</strong> that simulates a <strong>Google Maps</strong>-like interface. I built this as a personal activity to learn mobile development and geolocation integration.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Bootstrap Image Preview Modal -->
+<div class="modal fade" id="imagePreviewModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-transparent border-0">
+            <div class="modal-body p-0">
+                <img id="previewImage" src="" class="img-fluid rounded shadow" />
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function showImage(src) {
+        document.getElementById("previewImage").src = src;
+    }
+</script>
+
+<style>
+    p, strong {
+        color: black;
+    }
+
+    .project-img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        cursor: pointer;
+        border-radius: 0.375rem; /* Bootstrap's default rounded */
+    }
+</style>
